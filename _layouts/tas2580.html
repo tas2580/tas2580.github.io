@@ -1,0 +1,30 @@
+{% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="{{ site.url }}{% if '' != page_url_without_index_html %}{{ page_url_without_index_html }} {% endif %}" />
+	<link rel="stylesheet" type="text/css" href="{{ site.url }}/tas2580.css" />
+	<title>{{ page.title }} • {{site.name}}</title>
+</head>
+<body>
+	<header>
+	<a href="./">tas2580</a>
+	<nav>
+		<a href="{{ site.url }}">Home</a>
+		<a href="{{ site.url }}/extensions/">Extensions</a>
+		<a href="{{ site.url }}/howtos/">HOWTOs</a>
+	</nav>
+	</header>
+
+	<main>
+		{{ content }}
+	</main>
+
+	<footer>
+		Website ©2015 by <a href="https://tas2580.net/">tas2580</a>
+	</footer>
+</body>
+</html>
