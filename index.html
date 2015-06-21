@@ -1,9 +1,45 @@
----
-layout: tas2580
-title: Home
----
+<!DOCTYPE html>
+<html lang="de-de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<title>Home • phpBB Extensions</title>
+</head>
+<body>
+	<header>
+		tas2580 Github page<br />
+		developing websites since 1998
+	</header>
 
-<h1>tas2580 Github page</h1>
-<
+	<main>
+		<article>
+			<h1>Welcome to my page</h1>
+		</article>
 
-<a href="https://github.com/tas2580"><img src="images/github.png" alt="Github" width="170" height="72" class="imgcenter" /></a>
+		<hr />
+		<article>
+			<h2>Customize your phpBB</h2>
+			<p>Use my modifications or extensions to customize your phpBB Forum.</p>
+			<a class="phpbb" href="https://tas2580-extensions.ml">phpBB Extensions</a>
+			<a class="phpbb" href="https://tas2580-modifications.ml">phpBB Modifications</a>
+		</article>
+
+		<hr />
+		<article>
+			<h2>Control your Gameserver</h2>
+			<p>Use my Scripts to control your Gameserver from a remote client.</p>
+			<a class="gsa" href="https://gameserver-admin.de">Gameserver Admin<br />Gameserver Suport Forum</a>
+		</article>
+	</main>
+
+	<footer>
+		Website ©2015 by <a href="https://tas2580.net/">tas2580</a>
+	</footer>
+</body>
+<script>
+	window.onscroll=function(){
+	var header=document.getElementsByTagName('header');
+	if(window.pageYOffset>440){header[0].className='scrollfull';}else if(window.pageYOffset>5){header[0].className='scrollhalf';}else{header[0].className='';}return true;};
+</script>
+</html>
